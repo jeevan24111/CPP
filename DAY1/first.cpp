@@ -20,5 +20,14 @@ int main(){
       std::cout<<s<<endl;
       std::cout<<name<<endl;
 
+      cout<<"done"<<endl;
+      /*Operators*/
+    int x1=10,y1=2;
+    cout<<x1+y1<<endl;
+    cout<<x1-y1<<endl;
+    cout<<x1*y1<<endl;
+    cout<<x1/y1<<endl;
+    cout<<x1%y1<<endl;
+    cout<<x1+y1-x1<<endl;
     return 0;
 }
