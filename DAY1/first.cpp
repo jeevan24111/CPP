@@ -39,6 +39,31 @@ int main(){
     cout<<--a1<<endl;
     cout<<a1--<<endl;
 
+    // cout<<"ternary operator"<<endl;
+    // int age=18;
+    // if(age<18) ? cout<<"child":cout<<"adult"<<endl;
     
-      return 0;
+
+    cout<<"logical operators"<<endl;
+    int age=17;
+    bool isStudent=true;
+
+    if(age>=18 && isStudent){
+        cout<<"You Are In College"<<endl;
+    }else{
+        cout<<"Your are in School"<<endl;
+    }
+
+    if(age>=18 || isStudent){
+        cout<<"you can  avail 80% discount"<<endl;
+    }else{
+        cout<<"you can avail 20% discount"<<endl;
+    }
+
+    if(age!=20){
+        cout<<"you can  avail 80% discount"<<endl;
+    }else{
+        cout<<"you can avail 20% discount"<<endl;
+    }
+     return 0;
 }
