@@ -29,5 +29,16 @@ int main(){
     cout<<x1/y1<<endl;
     cout<<x1%y1<<endl;
     cout<<x1+y1-x1<<endl;
-    return 0;
+
+    cout<<"unary operators"<<endl;
+    /*unary operators*/
+    short a1=5;
+    a1++;
+    cout<<a1<<endl;
+    cout<<++a1<<endl;
+    cout<<--a1<<endl;
+    cout<<a1--<<endl;
+
+    
+      return 0;
 }
