@@ -65,5 +65,9 @@ int main(){
     }else{
         cout<<"you can avail 20% discount"<<endl;
     }
+
+    cout<<"Comparison operators"<<endl;
+    /* ==  >= <= != > < */
+    
      return 0;
 }
