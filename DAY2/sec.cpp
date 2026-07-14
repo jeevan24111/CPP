@@ -86,5 +86,7 @@ int a;
             case 12:cout<<"Its December\n";break;
             default:cout<<"Invalid month";
          }
-    return 0;
-}
+
+return 0;
+
+        }
