@@ -80,5 +80,6 @@ int main(){
         cout<<arrayOfUserSize[i]<<" ";
      }
 
+     //we should not use user input for array size
     return 0;
 }
