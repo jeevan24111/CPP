@@ -2,7 +2,10 @@
 using namespace std;
 
 
-void sum(int a,int b){
+void sum(int a=1,int b=0){
+    cout<<a+b<<endl;
+}
+void sum1(int a=1,int b=0){
     cout<<a+b<<endl;
 }
 void sum(int a,int b,int c){
@@ -47,7 +50,7 @@ int main(){
      cout<<"value of A After swapping  "<<a<<endl;
    cout<<"value of b  After swapping" <<b<<endl;
 
-   //in call by value copies of values are sent to the function ,acutal values are not affected 
+   //in call by value copies of values are sent to the function ,actual values are not affected 
    /* In function when you send value they are scope will end there only
     to change original values you have to do pass by references
    */
@@ -60,5 +63,13 @@ int main(){
      cout<<"value of B After swapping  "<<b<<endl;
    cout<<"value of  C After swapping " <<c<<endl;
 
-     return 0;
+   
+
+     //default constructor
+     /* If any parameter is not send to fxn  fixed values will be present thee to handle error*/
+     int d1=20,d2=30;
+     sum1();
+
+
+       return 0;
 }
