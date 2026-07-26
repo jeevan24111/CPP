@@ -14,7 +14,7 @@ bool LinearSearch(int arr[],int n,int key){
 
 int main(){
     int arr[5];
-    cout<<"Max element in an array\n";
+    cout<<"Search element in an array\n";
     cout<<"Enter array element\n";
     for(int i=0;i<5;i++){
         cin>>arr[i];
