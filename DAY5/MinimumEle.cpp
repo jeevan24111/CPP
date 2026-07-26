@@ -15,7 +15,7 @@ int minimumElement1(int arr[],int n){
 
 int main(){
     int arr[5];
-    cout<<"Max element in an array\n";
+    cout<<"Min  element in an array\n";
     cout<<"Enter array element\n";
     for(int i=0;i<5;i++){
         cin>>arr[i];
