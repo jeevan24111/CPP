@@ -1,7 +1,13 @@
 #include<iostream>
 using namespace std;
  void RotateArrayByN(int arr[],int n,int k){
-
+    if(!k){
+    cout<<"\n AFter Array Rotation when k=0 : \n";
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+        return;
+    }
     int arr1[n];
     for(int i=0;i<n;i++){
         arr1[(i+k)%n]=arr[i];
