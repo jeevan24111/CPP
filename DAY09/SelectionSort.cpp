@@ -14,11 +14,11 @@ int main(){
             [1,10,4,2,9]->[1,2,4,9,10]
 
                     first get minimum ele and put it at first position
-                    1.  1,10,4,2,9
-                    2. 1,2,4,10,9
+                    1.1,10,4,2,9
+                    2.1,2,4,10,9
                     3.1,2,4,10,9
-                    4.1,2,3,9,10
-                    5.1,2,3,4,9,10
+                    4.1,2,4,9,10
+                    5.1,2,4,9,10
                     
     */
      int arr[5]={1,10,4,2,9};
@@ -37,7 +37,8 @@ int main(){
             for(j=i+1;i<n;j++){
                 cout<<arr[j]<<" ";
                 if(arr[j]<arr[min]){
-                    swap(arr[j],arr[i]);
+                   int index=j;
+                    swap(arr[index],arr[i]);
                 }
             }
         }
