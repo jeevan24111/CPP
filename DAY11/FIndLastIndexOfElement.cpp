@@ -12,13 +12,13 @@ vector<int> getfirstandlastindex(vector<int>arr,int n,int target){
         int mid=start+(end-start)/2;
         // cout<<mid<<" \n";
         if(arr[mid]==target){
-            end=mid-1;
+            end=mid-1;  //go left
             index1=mid;
             // cout<<"\n"<<index1;
         }else if(target>arr[mid]){
-          end=mid-1;
-        }else{
              start=mid+1;
+        }else{
+            end=mid-1;
         }
         
     }
@@ -31,10 +31,10 @@ vector<int> getfirstandlastindex(vector<int>arr,int n,int target){
             start=mid+1;
             index2=mid;
             // cout<<"\n"<<index2;
-        }else if(target<arr[mid]){
-            end=mid-1;  
+        }else if(target>arr[mid]){
+             start=mid+1;
         }else{
-            start=mid+1;
+            end=mid-1;
         }
         
     }
