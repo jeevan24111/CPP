@@ -33,6 +33,8 @@ int SquareRootOfNumber(int n){
 
 int main(){
 
+
+    /*  task is to find square root of number using binary search */
     cout<<"Enter a number to find its square root\t :";
     int num;
     cin>>num;
