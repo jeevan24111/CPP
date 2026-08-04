@@ -9,8 +9,13 @@ int RotatedMinimum(vector<int> arr){
                 min=arr[i];
                 cout<<" \n"<<min;
             }
-    }
-     return min;*/
+     }
+     return min;
+     */
+     if(arr[0]<arr[arr.size()-1]){
+       return arr[0];  // if array is not rotated
+    //    added changes,if given array is not rotated or if any condition in which array is sorted then no need to check just return arr[0] element as minimum
+     }
 
      //2.optimized solution using binary search
      int start=0,end=arr.size()-1;
