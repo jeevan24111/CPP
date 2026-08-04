@@ -18,7 +18,8 @@ int PeakMountainElement(vector<int> arr){
      */ 
     // 2.optimized method
 
-    int start=0,end=n-1;
+    //changes lines from int start=0,end=n-1;
+    int start=1,end=n-2;
 
     while(start<=end){
              int mid=start+(end-start)/2;
