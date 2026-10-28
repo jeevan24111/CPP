@@ -16,10 +16,16 @@ int main(){
     cout<<*arr<<endl;//*points to the first index of array and gives its value 
     //* is used gives the value stored in the pointing address 
 
+    cout<<*(arr+0)<<endl;
+     cout<<*(arr+1)<<endl;
+    cout<<*(arr+2)<<endl;
+    cout<<*(arr+3)<<endl;
+    cout<<*(arr+4)<<endl;
+    // cout<<*(arr+5)<<endl;
     
     int sum=add(arr,size);
     //passing array and size  from here to add function to add all number in this array
-
+        cout<<endl<<sum<<endl;
 }
  //* p[] is also a pointer but a diff notation it is also a pointer pointing to the arr[] array which is a call by reference
 
@@ -34,20 +40,35 @@ int main(){
 
 
 int add(int *p,int n){
+    cout<<p;
+    cout<<&p<<endl;
+    cout<<*p<<endl;
         int sum=0;
     for(int i=0;i<n;i++){
         sum+=p[i];
     }
 
-    return sum;
-}
+     for(int i=0;i<n;i++){
+       cout<<&p[i]<<endl;
+       cout<<p[i]<<endl;
+       cout<<*(p+i)<<endl;
 
-
-int add1(int *p,int n){
-        int sum=0;
-    for(int i=0;i<n;i++){
-        cout<<&p(i);
     }
 
+    cout<<*(p+1)<<endl;
+    cout<<*(p+2)<<endl;
+    cout<<*(p+3)<<endl;
+    cout<<*(p+4)<<endl;
+    // cout<<*(p+5)<<endl;
     return sum;
 }
+
+
+// int add1(int *p,int n){
+//         int sum=0;
+//     for(int i=0;i<n;i++){
+//         cout<<&p(i);
+//     }
+
+//     return sum;
+// }
